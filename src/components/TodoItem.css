@@ -1,0 +1,52 @@
+.TodoItem{
+   font-size: 18px;
+   color: rgb(92, 92, 92);
+   padding:15px;
+   border-radius: 5px;
+   transition: linear .3s;
+   display: flex;
+   cursor: pointer;
+   border-bottom: 1px solid rgb(235, 235, 235);
+}
+.TodoItem:hover{
+   background: rgb(231, 231, 231);
+}
+.TodoItem-complete {
+   color: #bebebe;
+}
+.TodoItem-complete p{
+   text-decoration: line-through;
+}
+.title-complete{
+   font-size: 15px;
+   padding: 5px 5px 0 0;
+   text-align: right;
+   width: 100%;
+   color: rgb(31, 201, 8);
+   text-decoration: none !important;
+}
+p{
+   margin-left: 20px;
+   min-width: 290px;
+}
+.nf-checkedImg {
+   -webkit-mask: url(../images/checkedImg.svg) no-repeat;
+   mask: url(../images/checkedImg.svg) no-repeat;
+   /*Your Size*/
+   height: 25px;
+   width: 25px;
+   /*Your Color*/
+   background: rgb(211, 211, 211);
+   /*Your code css here*/
+}
+.nf-checkedImg-complete {
+   -webkit-mask: url(../images/checkedImg.svg) no-repeat;
+   mask: url(../images/checkedImg.svg) no-repeat;
+   /*Your Size*/
+   height: 25px;
+   width: 25px;
+   min-width: 25px;
+   /*Your Color*/
+   background: rgb(25, 141, 9);
+   /*Your code css here*/
+}
