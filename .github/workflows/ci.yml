@@ -17,8 +17,8 @@ jobs:
           script: |
             cd ${{ secrets.PROJECT_PATH }}
             git pull
-            npm run build
-            npx serve -s 7000 build
-          # script: |
-          #   cd ${{ secrets.PROJECT_PATH }} 
-          #   git pull https://${{ secrets.USERNAME }}:${{ secrets.PASSWORD }}@github.com/ninhnguyen375/todolist.git
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm run build
+      - run: npx serve -s build -p 7000
