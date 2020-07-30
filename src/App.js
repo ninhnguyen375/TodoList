@@ -8,10 +8,10 @@ class App extends Component {
     this.state = {
       newItem: '',
       todoItems:[
-        { title: 'Mai nghỉ học.', isComplete: false},
-        { title: 'Mai đi ăn kem.', isComplete: true},
-        { title: 'Tuần sau đóng tiền học.', isComplete: false},
-        { title: 'Nộp bản sao tốt nghiệp.', isComplete: true}
+        { title: 'Mua Macbook.', isComplete: false},
+        { title: 'Mua iPhone.', isComplete: true},
+        { title: 'Mua Apple watch.', isComplete: false},
+        { title: 'Nghỉ học.', isComplete: true}
       ]
     }
     this.onKeyUp = this.onKeyUp.bind(this);
