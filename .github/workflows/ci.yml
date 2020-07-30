@@ -15,4 +15,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           # script: eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa_ninh && cd ${{ secrets.PROJECT_PATH }} && git pull
-          script: cd ${{ secrets.PROJECT_PATH }} && git pull https://${{ secrets.USERNAME }}:${{ secrets.PASSWORD }}@github.com/ninhnguyen375/todolist.git
+          script: |
+            cd ${{ secrets.PROJECT_PATH }} 
+            git pull https://${{ secrets.USERNAME }}:${{ secrets.PASSWORD }}@github.com/ninhnguyen375/todolist.git
