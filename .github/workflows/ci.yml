@@ -17,9 +17,5 @@ jobs:
           script: |
             cd ${{ secrets.PROJECT_PATH }}
             git pull
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm i
-      - run: npm run build
-      - run: npx serve -s build -p 7000
+            npm install
+            npm run build
