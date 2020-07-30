@@ -18,7 +18,7 @@ jobs:
             cd ${{ secrets.PROJECT_PATH }}
             git pull
             npm run build
-            npx serve -s 7000
+            npx serve -s 7000 build
           # script: |
           #   cd ${{ secrets.PROJECT_PATH }} 
           #   git pull https://${{ secrets.USERNAME }}:${{ secrets.PASSWORD }}@github.com/ninhnguyen375/todolist.git
